@@ -17,6 +17,13 @@ class MainActivity : AppCompatActivity() {
     private lateinit var dao: PersonaDAO
 
     lateinit var button_aggiungi_persona: Button
+    lateinit var edittext_nome: EditText
+    lateinit var edittext_cognome: EditText
+    lateinit var edittext_data_nascita: EditText
+    lateinit var edittext_sesso: EditText
+    lateinit var edittext_citta_nascita: EditText
+    lateinit var edittext_provincia_nascita: EditText
+    lateinit var rv_people: RecyclerView
 
 
         override fun onCreate(savedInstanceState: Bundle?) {
@@ -25,13 +32,13 @@ class MainActivity : AppCompatActivity() {
             
             // TODO AGGIUSTA QUI
             button_aggiungi_persona =findViewById<Button>(R.id.button_aggiungi_persona)
-            val lateinit edittext_nome = findViewById<EditText>(R.id.edittext_nome)
-            val lateinit edittext_cognome = findViewById<EditText>(R.id.edittext_cognome)
-            val lateinit edittext_data_nascita = findViewById<EditText>(R.id.edittext_data_nascita)
-            val lateinit edittext_sesso = findViewById<EditText>(R.id.edittext_sesso)
-            val lateinit edittext_citta_nascita = findViewById<EditText>(R.id.edittext_citta_nascita)
-            val lateinit edittext_provincia_nascita = findViewById<EditText>(R.id.edittext_provincia_nascita)
-            val lateinit rv_people = findViewById<RecyclerView>(R.id.rv_people)
+            edittext_nome = findViewById<EditText>(R.id.edittext_nome)
+            edittext_cognome = findViewById<EditText>(R.id.edittext_cognome)
+            edittext_data_nascita = findViewById<EditText>(R.id.edittext_data_nascita)
+            edittext_sesso = findViewById<EditText>(R.id.edittext_sesso)
+            edittext_citta_nascita = findViewById<EditText>(R.id.edittext_citta_nascita)
+            edittext_provincia_nascita = findViewById<EditText>(R.id.edittext_provincia_nascita)
+            rv_people = findViewById<RecyclerView>(R.id.rv_people)
 
 
 
