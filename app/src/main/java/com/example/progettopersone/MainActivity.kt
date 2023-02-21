@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.*
+import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
@@ -39,6 +40,7 @@ class MainActivity : AppCompatActivity() {
             edittext_citta_nascita = findViewById<EditText>(R.id.edittext_citta_nascita)
             edittext_provincia_nascita = findViewById<EditText>(R.id.edittext_provincia_nascita)
             rv_people = findViewById<RecyclerView>(R.id.rv_people)
+            rv_people.layoutManager = LinearLayoutManager(this)
 
 
 
@@ -134,6 +136,7 @@ class PersonaAdapter(private val people: List<Persona>) : RecyclerView.Adapter<P
     }
 
     class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
+
         val nome: TextView = itemView.findViewById(R.id.nome)
         val cognome: TextView = itemView.findViewById(R.id.cognome)
         val dataNascita: TextView = itemView.findViewById(R.id.data_nascita)
