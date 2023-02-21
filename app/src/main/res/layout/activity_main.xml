@@ -1,46 +1,89 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="16dp">
+    android:padding="16dp"
+    android:background="#F5F5F5">
 
+    <TextView
+        android:id="@+id/textview_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Inserisci i dati della persona"
+        android:textSize="20sp"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:padding="16dp"
+        android:background="#FFFFFF"
+        android:layout_marginBottom="16dp"/>
 
     <EditText
         android:id="@+id/edittext_nome"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Nome" />
+        android:hint="Nome"
+        android:padding="16dp"
+        android:textColor="#000000"
+        android:textColorHint="#808080"
+        android:background="#FFFFFF"
+        android:layout_marginBottom="16dp"/>
 
     <EditText
         android:id="@+id/edittext_cognome"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Cognome" />
+        android:hint="Cognome"
+        android:padding="16dp"
+        android:textColor="#000000"
+        android:textColorHint="#808080"
+        android:background="#FFFFFF"
+        android:layout_marginBottom="16dp"/>
 
     <EditText
         android:id="@+id/edittext_data_nascita"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Data di nascita" />
+        android:hint="Data di nascita"
+        android:padding="16dp"
+        android:textColor="#000000"
+        android:textColorHint="#808080"
+        android:background="#FFFFFF"
+        android:layout_marginBottom="16dp"/>
 
     <EditText
         android:id="@+id/edittext_sesso"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Sesso" />
+        android:hint="Sesso"
+        android:padding="16dp"
+        android:textColor="#000000"
+        android:textColorHint="#808080"
+        android:background="#FFFFFF"
+        android:layout_marginBottom="16dp"/>
 
     <EditText
         android:id="@+id/edittext_citta_nascita"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Città di nascita" />
+        android:hint="Città di nascita"
+        android:padding="16dp"
+        android:textColor="#000000"
+        android:textColorHint="#808080"
+        android:background="#FFFFFF"
+        android:layout_marginBottom="16dp"/>
 
     <EditText
         android:id="@+id/edittext_provincia_nascita"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Provincia di nascita" />
+        android:hint="Provincia di nascita"
+        android:padding="16dp"
+        android:textColor="#000000"
+        android:textColorHint="#808080"
+        android:background="#FFFFFF"
+        android:layout_marginBottom="16dp"/>
 
     <Button
         android:id="@+id/button_aggiungi_persona"
