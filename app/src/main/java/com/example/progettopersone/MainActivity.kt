@@ -87,6 +87,7 @@ class MainActivity : AppCompatActivity() {
         // Aggiungi la persona al database
         GlobalScope.launch {
             dao.insert(person)
+            showAllPeople()
         }
 
         // Resetta i campi di input
