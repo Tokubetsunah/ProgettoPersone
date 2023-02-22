@@ -7,95 +7,128 @@
     android:padding="16dp"
     android:background="#F5F5F5">
 
-    <TextView
-        android:id="@+id/textview_title"
+    <!-- Sezione per l'aggiunta di una persona -->
+    <LinearLayout
+        android:id="@+id/layout_aggiungi_persona"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Inserisci i dati della persona"
-        android:textSize="20sp"
-        android:textColor="#000000"
-        android:textStyle="bold"
-        android:padding="16dp"
-        android:background="#FFFFFF"
-        android:layout_marginBottom="16dp"/>
+        android:orientation="vertical"
+        android:visibility="gone">
 
-    <EditText
-        android:id="@+id/edittext_nome"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Nome"
-        android:padding="16dp"
-        android:textColor="#000000"
-        android:textColorHint="#808080"
-        android:background="#FFFFFF"
-        android:layout_marginBottom="16dp"/>
+        <TextView
+            android:id="@+id/textview_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Inserisci i dati della persona"
+            android:textSize="20sp"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:padding="16dp"
+            android:background="#FFFFFF"
+            android:layout_marginBottom="16dp"/>
 
-    <EditText
-        android:id="@+id/edittext_cognome"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Cognome"
-        android:padding="16dp"
-        android:textColor="#000000"
-        android:textColorHint="#808080"
-        android:background="#FFFFFF"
-        android:layout_marginBottom="16dp"/>
+        <EditText
+            android:id="@+id/edittext_nome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nome"
+            android:padding="16dp"
+            android:textColor="#000000"
+            android:textColorHint="#808080"
+            android:background="#FFFFFF"
+            android:layout_marginBottom="16dp"/>
 
-    <EditText
-        android:id="@+id/edittext_data_nascita"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Data di nascita"
-        android:padding="16dp"
-        android:textColor="#000000"
-        android:textColorHint="#808080"
-        android:background="#FFFFFF"
-        android:layout_marginBottom="16dp"/>
+        <EditText
+            android:id="@+id/edittext_cognome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Cognome"
+            android:padding="16dp"
+            android:textColor="#000000"
+            android:textColorHint="#808080"
+            android:background="#FFFFFF"
+            android:layout_marginBottom="16dp"/>
 
-    <EditText
-        android:id="@+id/edittext_sesso"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Sesso"
-        android:padding="16dp"
-        android:textColor="#000000"
-        android:textColorHint="#808080"
-        android:background="#FFFFFF"
-        android:layout_marginBottom="16dp"/>
+        <EditText
+            android:id="@+id/edittext_data_nascita"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Data di nascita"
+            android:padding="16dp"
+            android:textColor="#000000"
+            android:textColorHint="#808080"
+            android:background="#FFFFFF"
+            android:layout_marginBottom="16dp"/>
 
-    <EditText
-        android:id="@+id/edittext_citta_nascita"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Città di nascita"
-        android:padding="16dp"
-        android:textColor="#000000"
-        android:textColorHint="#808080"
-        android:background="#FFFFFF"
-        android:layout_marginBottom="16dp"/>
+        <EditText
+            android:id="@+id/edittext_sesso"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Sesso"
+            android:padding="16dp"
+            android:textColor="#000000"
+            android:textColorHint="#808080"
+            android:background="#FFFFFF"
+            android:layout_marginBottom="16dp"/>
 
-    <EditText
-        android:id="@+id/edittext_provincia_nascita"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Provincia di nascita"
-        android:padding="16dp"
-        android:textColor="#000000"
-        android:textColorHint="#808080"
-        android:background="#FFFFFF"
-        android:layout_marginBottom="16dp"/>
+        <EditText
+            android:id="@+id/edittext_citta_nascita"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Città di nascita"
+            android:padding="16dp"
+            android:textColor="#000000"
+            android:textColorHint="#808080"
+            android:background="#FFFFFF"
+            android:layout_marginBottom="16dp"/>
+        <EditText
+            android:id="@+id/edittext_provincia_nascita"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Provincia di nascita"
+            android:padding="16dp"
+            android:textColor="#000000"
+            android:textColorHint="#808080"
+            android:background="#FFFFFF"
+            android:layout_marginBottom="16dp"/>
 
+
+
+    </LinearLayout>
+
+    <!-- Bottone per aprire/chiudere la sezione di aggiunta persona -->
     <Button
         android:id="@+id/button_aggiungi_persona"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Aggiungi persona" />
 
-
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rv_people"
+    <!-- Sezione per la lista di persone -->
+    <LinearLayout
+        android:id="@+id/layout_elenco_persone"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1" />
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textview_elenco_persone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Elenco Persone"
+            android:textSize="20sp"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:padding="16dp"
+            android:background="#FFFFFF"
+            android:layout_marginBottom="16dp"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_people"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+    </LinearLayout>
 
 </LinearLayout>
