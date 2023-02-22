@@ -96,12 +96,12 @@
 
     </LinearLayout>
 
-    <!-- Bottone per aprire/chiudere la sezione di aggiunta persona -->
+    <!-- Bottone per aprire/chiudere la sezione di aggiunta persona e aggiungere una persona nel caso in cui la sezione sia aperta e TUTTI i campi siano inseriti -->
     <Button
         android:id="@+id/button_aggiungi_persona"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Aggiungi persona" />
+        android:text="+" />
 
     <!-- Sezione per la lista di persone -->
     <LinearLayout
